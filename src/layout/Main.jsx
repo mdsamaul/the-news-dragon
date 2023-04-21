@@ -2,6 +2,7 @@ import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import { Outlet } from 'react-router-dom';
 import Footer from '../pages/Shared/Footer/Footer';
 import Header from '../pages/Shared/Header/Header';
 import LeftNav from '../pages/Shared/LeftNav/LeftNav';
@@ -18,7 +19,7 @@ const Main = () => {
                         <LeftNav></LeftNav>
                     </Col>
                     <Col lg={6}>
-                        <h2>main component comming.....</h2>
+                        <Outlet></Outlet>
                     </Col>
                     <Col lg={3}>
                         <RightNav></RightNav>
