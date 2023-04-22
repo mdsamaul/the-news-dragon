@@ -16,7 +16,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Navigate to='/category/0'></Navigate>
+                element: <Navigate to="categorie/0"></Navigate>
             },
             {
                 path: 'login',
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
         element: <Main></Main>,
         children: [
             {
-                path: 'categorie/:id',
+                path: ':id',
                 element: <Category></Category>,
                 loader: ({ params }) => fetch(`http://localhost:5000/categories/${params.id}`)
 
